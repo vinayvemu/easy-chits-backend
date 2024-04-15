@@ -8,6 +8,7 @@ const chitSchema = new mongoose.Schema({
   endDate: { type: Date, required: true },
   expectedChit: { type: Number, required: true },
   actualChitDelivered: { type: Number, required: false },
+  chitDeliveredOn: { type: Date, required: false },
   chitDeliveredAmount: { type: Number, required: false },
 });
 

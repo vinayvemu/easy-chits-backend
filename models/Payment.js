@@ -8,6 +8,8 @@ const paymentSchema = new mongoose.Schema({
   receivedDate: { type: Date, required: true },
   amountReceived: { type: Number, required: true },
   balance: { type: Number, required: false },
+  mode: { type: String, required: true },
+  onlineRefNumber: { type: String, required: false },
   transferredAmount: { type: Number, required: false },
 });
 
