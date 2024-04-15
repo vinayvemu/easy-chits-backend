@@ -4,7 +4,7 @@ const paymentSchema = new mongoose.Schema({
   chitId: { type: mongoose.Schema.Types.ObjectId, required: true },
   userId: { type: mongoose.Schema.Types.ObjectId, required: true },
   orgId: { type: mongoose.Schema.Types.ObjectId, required: true },
-  paidForTheMonth: { type: Date, required: true },
+  installmentNumber: { type: Number, required: true },
   receivedDate: { type: Date, required: true },
   amountReceived: { type: Number, required: true },
   balance: { type: Number, required: false },
